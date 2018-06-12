@@ -1,0 +1,47 @@
+.ba-header{
+	padding: 21px 0 13px;
+	border-bottom: 1px solid rgba(100, 117, 159, 18);
+	background-color:  rgba(0, 0, 0, 0.52);
+
+}
+.ba-main-menu{
+	li + li{
+		margin-left: 20px;
+		@include breakpoint(large){
+			margin-left: 31px;
+		}
+	}
+	a{
+		color:  #555f76;
+		font-size: 13px;
+		font-weight: 700;
+		background:none;
+		&:hover, &:focus{
+			color:#36c2ff;
+		}
+
+	}
+}
+.ba-mob-menu{
+	li{
+		
+	}
+	a{
+		padding: 10px 20px;
+	}
+	.active{
+		a{
+			color:#555f76;
+			background:#36c2ff;
+		}
+	}
+}
+
+.ba-account{
+	display: inline-flex;
+	align-items:center;
+	svg{
+		fill:$black;
+		margin-right: 10px;
+	}
+}
