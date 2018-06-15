@@ -1,6 +1,6 @@
 .ba-product{
 	background:$white;
-	
+	height: 100%;
     
 		&:hover{
 			box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
@@ -11,7 +11,7 @@
 		padding: 30px 25px 25px;
 		display: flex;
 		flex-direction:column;
-		
+		height: 100%;
 		color:$body-font-color;
 		
 		&:hover, &:focus{
@@ -21,19 +21,24 @@
 	&__img{
 		margin-bottom: 25px;
 		flex-grow:1;
-		align-self:center;
+		align-self: center;
+    	align-items: center;
+    	display: flex
 		
 	}
 	&__title{
 		font-size: 18px;
-		margin-bottom: 26px;	
+		margin-bottom: 10px;	
 	}
 	&__price{
 		font-size: 18px;
 		color: $primary-color;
 		font-weight: 700;	
 	}
-	
+	&__rate{
+		
+		margin-bottom: 10px;	
+	}
 }
 
 
@@ -58,11 +63,18 @@
     }
 }
 .slick-prev{
-	display: none;
+	display: none!important;
 }
 .slick-next{
-	display: none;
+	display: none!important;
 }
-
+.ba-slider{
+	.slick-track{
+		display: flex;
+	}
+	.slick-slide{
+		height: auto;
+	}
+}
 
 

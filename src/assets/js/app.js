@@ -10,9 +10,12 @@
 //=require foundation.util.triggers.min.js
 
 //=require foundation.offcanvas.min.js 
-
+//=require foundation.util.keyboard.js
+//=require foundation.util.imageLoader.js
+//=require foundation.util.box.js
+//=require foundation.util.nest.js
 // require foundation.util.*.min.js
-
+//=require foundation.dropdownMenu.min.js
 // require foundation.dropdown.min.js
 // require foundation.responsiveMenu.min.js
 // require foundation.responsiveToggle.min.js
@@ -24,7 +27,7 @@
 // require foundation.accordion.min.js
 // require foundation.accordionMenu.min.js
 // require foundation.drilldown.min.js
-//=require foundation.dropdownMenu.min.js
+
 // require foundation.equalizer.min.js
 // require foundation.interchange.min.js
 // require foundation.magellan.min.js
@@ -32,7 +35,7 @@
 // require foundation.reveal.min.js
 //=require foundation.slider.min.js
 // require foundation.sticky.min.js
-// require foundation.tabs.min.js
+//=require foundation.tabs.min.js
 // require foundation.tooltip.min.js
 // require foundation.zf.responsiveAccordionTabs.min.js
 
@@ -50,7 +53,35 @@
 			dots: true,
 			infinite: false,
 			slidesToShow:3,
-			slidesToScroll:1
+			slidesToScroll:1,
+			responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+      }
+    }
+   
+  ]
 		});
 	});
 
